@@ -39,8 +39,14 @@ public class BatchConfiguration {
 	@Value("${org.infy.mail.batch.attachment}")
 	private String attachment;
 	
+	@Value("${org.infy.mail.batch.campaign.attachment}")
+	private String campaignAttachment;
+	
 	@Value("${org.infy.mail.batch.notifications.email}")
 	private String email;
+	
+	@Value("${notificationType}")
+	private String notificationType;
 
 
 	@Bean
@@ -61,8 +67,12 @@ public class BatchConfiguration {
 	
 	@Bean
 	public EmployeeICountItemProcessor processor() {
-		return new EmployeeICountItemProcessor(sender, attachment);
+		if (notificationType.equalsIgnoreCase("todo"))
+			return new EmployeeICountItemProcessor(sender, attachment);
+		else
+			return new EmployeeICountItemProcessor(sender, campaignAttachment);
 	}
+	
 	
 	@Bean
 	public MailBatchItemWriter writer() {
