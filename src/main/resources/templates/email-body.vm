@@ -1,10 +1,22 @@
-Hi,
+Dear $name,
 
 Do you want to experience a dramatic growth at your work and earn more coins for InfyGold+
 
-If yes, then you need to pay attention to this in-depth. You can earn more coins if you give and receive appreciations, feedback between 10th June to 28th July.
+If yes, then you need to pay attention to this in-depth. You can earn more coins if you give and receive appreciations, feedback.
 
-Exiting earlybird prizes too. Pls provide feedback, complete course/training and send/receive appreciation. for more details pls logon to http://sparshv2/Pages/iCampaign.aspx 
+Now, mid year evaluation is far more simple than ever before. Pls follow these links to provide your valuable inputs anytime over the year. 
+
+1. Feedback
+http://localhost:3000/feedback 
+
+2. Appreciation
+http://localhost:3000/appreciation 
+
+3. Course
+http://localhost:3000/course 
+
+4. Task
+http://localhost:3000/task 
 
 Regards,
 Gladiator Team.
